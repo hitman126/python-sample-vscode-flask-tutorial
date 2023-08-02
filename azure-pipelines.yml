@@ -42,5 +42,10 @@ steps:
     AppConfigurationEndpoint: 'https://reggiecomappconfigstore.azconfig.io'
     KeyFilter: '*'
 
-    
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Hello world
+      echo The following app config secrets were retrieved:
+      echo $(TestApp:Settings:TextAlign)
   
