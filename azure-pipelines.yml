@@ -36,7 +36,9 @@ steps:
   displayName: 'pytest'
 
 - task: AzureAppConfiguration@6
+  displayName: 'Retrieve app config value'
   inputs:
     azureSubscription: 'MyADOServicePrincipal'
     AppConfigurationEndpoint: 'https://reggiecomappconfigstore.azconfig.io'
-    KeyFilter: '*'
+    KeyFilter: 'TestApp:Settings:TextAlign'
+  
