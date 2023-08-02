@@ -34,3 +34,9 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- task: AzureAppConfiguration@6
+  inputs:
+    azureSubscription: 'MyADOServicePrincipal'
+    AppConfigurationEndpoint: 'https://reggiecomappconfigstore.azconfig.io'
+    KeyFilter: '*'
