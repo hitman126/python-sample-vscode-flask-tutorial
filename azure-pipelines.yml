@@ -43,6 +43,7 @@ steps:
     KeyFilter: '*'
 
 - task: CmdLine@2
+  displayName: 'Display the retrieved Azure AppConfig values'
   inputs:
     script: |
       echo Hello world
