@@ -39,7 +39,7 @@ steps:
   displayName: 'Retrieve app config value'
   inputs:
     azureSubscription: 'MyADOServicePrincipal'
-    AppConfigurationEndpoint: 'https://reggiecomappconfigstore.azconfig.io'
+    AppConfigurationEndpoint: 'https://rmanteawconfigstore.azconfig.io'
     KeyFilter: '*'
 
 - task: CmdLine@2
