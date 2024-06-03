@@ -40,8 +40,8 @@ steps:
   inputs:
     azureSubscription: 'MyADOServicePrincipal'
     AppConfigurationEndpoint: 'https://rmanteawconfigstore.azconfig.io'
-    #KeyFilter: '*'
-    KeyFilter: 'appConfKey1'
+    KeyFilter: '*'
+    #eyFilter: 'appConfKey1'
 
 #- task: CmdLine@2
 #  displayName: 'Display the retrieved Azure AppConfig values'
