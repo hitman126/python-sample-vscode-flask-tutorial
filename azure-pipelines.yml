@@ -38,7 +38,7 @@ steps:
 - task: AzureAppConfiguration@6
   displayName: 'Retrieve app config value'
   inputs:
-    azureSubscription: 'MyADOServicePrincipal-DemoWorkshop'
+    azureSubscription: 'MyADOServicePrincipal'
     AppConfigurationEndpoint: 'https://rmanteawconfigstore.azconfig.io'
     #KeyFilter: '*'
     KeyFilter: 'appConfKey1'
