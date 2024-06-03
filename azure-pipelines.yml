@@ -38,15 +38,16 @@ steps:
 - task: AzureAppConfiguration@6
   displayName: 'Retrieve app config value'
   inputs:
-    azureSubscription: 'MyADOServicePrincipal'
+    azureSubscription: 'MyADOServicePrincipal-DemoWorkshop'
     AppConfigurationEndpoint: 'https://rmanteawconfigstore.azconfig.io'
-    KeyFilter: '*'
+    #KeyFilter: '*'
+    KeyFilter: 'appConfKey1'
 
-- task: CmdLine@2
-  displayName: 'Display the retrieved Azure AppConfig values'
-  inputs:
-    script: |
-      echo Hello world
-      echo The following app config secrets were retrieved:
-      echo $(TestApp:Settings:TextAlign)
+#- task: CmdLine@2
+#  displayName: 'Display the retrieved Azure AppConfig values'
+#  inputs:
+#    script: |
+#      echo Hello world
+#      echo The following app config secrets were retrieved:
+#      echo $(TestApp:Settings:TextAlign)
   
